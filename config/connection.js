@@ -1,14 +1,26 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "al2eso2u9628ajsr",
-  password: "n03bn9sb0988e5qp",
-  database: "xdkice95y5171qmt",
-  host:  "muowdopceqgxjn2b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
-});
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host:  "localhost",
+    user:  "al2eso2u9628ajsr",
+    password: "n03bn9sb0988e5qp",
+    database: "xdkice95y5171qmt",
+    host:  "muowdopceqgxjn2b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
+  });
+};
+
+//var connection = mysql.createConnection({
+ // host: "localhost",
+ // port: 3306,
+  //user: "al2eso2u9628ajsr",
+  //password: "n03bn9sb0988e5qp",
+  //database: "xdkice95y5171qmt",
+  //host:  "muowdopceqgxjn2b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
+//});
 
 // Make connection.
 connection.connect(function(err) {
