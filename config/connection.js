@@ -11,7 +11,7 @@
     host:  "localhost",
      user:  "root",
      password: "Boot55camp!",
-     database: "xdkice95y5171qmt",
+     database: "burger_db",
      
    });
  };
