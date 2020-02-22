@@ -1,5 +1,6 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
+var orm = require("orm");
 
 var PORT = process.env.PORT || 8080;
 
@@ -13,9 +14,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Import routes with server access
-// var routes = require();
+var routes = require();
 
-// app.use(routes);
+app.use(routes);
 
 app.listen(PORT, function() {
   console.log("Server listening on:  http://localhost:" + PORT);
