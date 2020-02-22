@@ -3,7 +3,7 @@
  var router = express.Router();
 
  //import the model (burger.js)
- var burger = require(".../models/burger.js")
+ var burger = require("../models/burger.js")
 
  //create all routes and set up logic where required
 router.get("/", function(req, res) {
