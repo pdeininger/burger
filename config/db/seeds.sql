@@ -1,5 +1,6 @@
-INSERT INTO burger (name) VALUES ('Veggie', true);
-INSERT INTO burger (name) VALUES ('Cheeseburger', true);
-INSERT INTO burger (name) VALUES ('Bacon', true);
-INSERT INTO burger (name) VALUES ('California', true);
+INSERT INTO burger (burger_type, devoured) VALUES ('Cheeseburger', true);
+INSERT INTO burger (burger_type, devoured) VALUES ('Veggieburger', true);
+INSERT INTO burger (burger_type, devoured) VALUES ('Double cheeseburger', true);
+INSERT INTO burger (burger_type, devoured) VALUES ('Baconburger', true);
+INSERT INTO burger (burger_type, devoured) VALUES ('Plantburger', true);
 

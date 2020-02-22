@@ -1,13 +1,12 @@
 ### Schema
-
-CREATE DATABASE burger_db;
-USE burger_db;
+DROP DATABASE IF EXISTS xdkice95y5171qmt;
+CREATE DATABASE xdkice95y5171qmt;
+USE xdkice95y5171qmt;
 
 CREATE TABLE burger
 (
 	id int NOT NULL AUTO_INCREMENT,
-	description VARCHAR(255) NOT NULL,
-	createdAt TIMESTAMP NOT NULL,
-    devoured BOOLEAN DEFAULT false, 
+	burger_type varchar(255) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
